@@ -1,0 +1,31 @@
+a{
+  padding:10px;
+  color: white;
+  text-decoration: none;
+
+}
+#top{
+  color: black;
+}
+.bannertext{
+  color: white;
+  text-align: center;
+}
+.bannertext .learnmore{
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+#nav1{
+  padding-top: 20px;
+}
+#hero-banner{
+  height: 500px;
+  background-image: url(assets/images/bg2.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+#header{
+  text-align: right;
+  height: 90px;
+}
