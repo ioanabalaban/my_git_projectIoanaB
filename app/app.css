@@ -1,11 +1,17 @@
-a{
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-a{
   padding:10px;
   color: white;
   text-decoration: none;
-
 }
-#footer{
-  color: black;
+#header{
+  text-align: right;
+  height: 90px;
 }
 .bannertext{
   color: white;
@@ -25,7 +31,83 @@ a{
   background-repeat:no-repeat;
   background-size: cover;
 }
-#header{
-  text-align: right;
-  height: 90px;
+#firstsection{
+  background-color: rgb(0, 100, 250);
+}
+#firstsection h1{
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+#firstsection p{
+  text-align: center;
+  color: white
+}
+
+.col-inline{
+  width: 32.33%;
+  display: inline-block;
+
+
+}
+.image-wrapper img{
+  height: 80px;
+  width: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+  border-radius: 50%;
+
+}
+#secondsection{
+  background-color:grey;
+}
+
+#secondsection h1{
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+#secondsection p{
+  text-align: center;
+  color: white
+}
+.container{
+  width: 1200px;
+  margin:auto;
+}
+.row-group{
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.col {
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+
+}
+.col img{
+  transition: all 1s linear;
+  width: 100%;
+}
+.col img:hover{
+  transform: scale(1.1);
+  opacity: 0.6;
+
+}
+
+.footer a{
+  text-align: center;
+  color: black;
+  transition: all 2s linear;
+
+}
+.arrow:hover{
+  transform: rotate(90deg);
 }
