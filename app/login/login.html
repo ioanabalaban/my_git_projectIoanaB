@@ -21,23 +21,21 @@
   </section>
   <section id="second">
     <div id="login">
-    <h2 id="login-text">Login</h2>
-        <form action="action_page.php">
+        <h2 id="login-text">Login</h2>
+        <form method="post">
             <label for="username"><strong>Username:</strong></label>
             <div class="second-text">
-                <input type="text" id="username" name="username" placeholder="Username">
+                <input type="text" required id="username" name="username" placeholder="Username" >
             </div>
             <label for="password"><strong>Password:</strong></label>
             <div class="second-text">
-                <input type="password" id="password" name="password" placeholder="*****">
+                <input type="password" required id="password" name="password" placeholder="*****">
             </div>
-            <fieldset class="loginaction">
+            <fieldset class="login-action">
               <label>
               <button class="loginbutton" type="button" name="button">Login</button>
-</label>
-              <label>
+            </label>
                 <input type="checkbox" value="Stay signed in">Stay signed in
-              </label>
             </fieldset>
             <div class="register">
                 <p>Don't have an account?
@@ -49,6 +47,6 @@
     </section>
 
     <footer class="footer" >
-      <p><strong>Copywrite</strong><i class="fa fa-copyright" aria-hidden="true"></i><a href="#top"><i class="fa fa-arrow-circle-o-up fa-4x arrow" aria-hidden="true" ></i></a>
+      <p><strong>Copywrite</strong><i class="fa fa-copyright" aria-hidden="true"></i><strong>Summer Internship</strong><a href="#top"><i class="fa fa-arrow-circle-o-up fa-3x arrow" aria-hidden="true" ></i></a></p>
     </footer>
 </body></html>

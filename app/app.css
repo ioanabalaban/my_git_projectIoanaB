@@ -103,11 +103,14 @@
   opacity: 0.6;
 
 }
-
+.footer{
+  text-align: center;
+  width: 100%;
+}
 .arrow{
   text-align: center;
   color: black;
-  transition: all 2s linear;
+  transition:2s linear;
 
 }
 .arrow:hover{

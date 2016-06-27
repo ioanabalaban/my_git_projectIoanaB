@@ -1,0 +1,115 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+fieldset{
+  border:0;
+}
+
+#one{
+  background-color: black;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+}
+#nav1{
+  margin-top: 30px;
+  margin-right: 30px;
+  float: right;
+}
+#header{
+  height: 90px;
+}
+#left{
+  color: white;
+  float: left;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.header-a{
+  padding:10px;
+  color: white;
+  text-decoration: none;
+}
+#second{
+    background-color: rgb(0, 100, 250);
+}
+#register{
+  width: 30%;
+  margin: auto;
+  padding: 100px;
+  color:white;
+}
+#register-text{
+  color: white;
+  margin-top: 0;
+  padding-top: 40px;
+
+}
+#username, #password, #email{
+  background-color: transparent;
+  border-radius: 8px;
+  color: white;
+  border-color: white;
+  width: 100%;
+  padding: 12px 20px;
+
+}
+#username:invalid{
+  border-color: red;
+}
+#password:invalid{
+  border-color: red;
+}
+#email:invalid{
+  border-color: red;
+}
+#checkbox{
+  background-color: transparent;
+  border-radius: 8px;
+  color: white;
+  border-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+.register{
+  color:white;
+  clear: both;
+  text-align: right;
+}
+}
+.register-action{
+  color:white;
+  float: right;
+
+}
+.second-text{
+  color:white;
+  margin-bottom: 20px;
+}
+.registerbutton{
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+.footer{
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  height: 90px;
+  background-color: white;
+}
+
+.arrow{
+  color: black;
+
+}
+.arrow:hover{
+  transform: rotate(360deg);
+  transition: 1s linear;
+}

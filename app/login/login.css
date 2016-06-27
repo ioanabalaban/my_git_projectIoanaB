@@ -5,8 +5,8 @@
 }
 fieldset{
   border:0;
-
 }
+
 #one{
   background-color: black;
   height: 90px;
@@ -39,7 +39,7 @@ fieldset{
 #login{
   width: 30%;
   margin: auto;
-  padding: 10px;
+  padding: 100px;
   color:white;
 }
 #login-text{
@@ -55,9 +55,15 @@ fieldset{
   border-color: white;
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
-}
+  margin-top: 0;
 
+}
+#username:invalid{
+  border-color: red;
+}
+#password:invalid{
+  border-color: red;
+}
 #checkbox{
   background-color: transparent;
   border-radius: 8px;
@@ -72,9 +78,10 @@ fieldset{
   text-align: right;
 }
 }
-.loginaction{
+.login-action{
   color:white;
   float: right;
+  position: relative;
 }
 .second-text{
   color:white;
@@ -86,9 +93,15 @@ fieldset{
   border-radius: 8px;
 
 }
-#footer{
-text-align: center;
+.footer{
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  height: 90px;
 }
+
 .arrow{
   color: black;
 
