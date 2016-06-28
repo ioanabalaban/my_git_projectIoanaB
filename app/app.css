@@ -4,33 +4,26 @@
   clear: both;
 }
 
-.header-a{
-  padding:10px;
-  color: white;
-  text-decoration: none;
-}
-#header{
-  text-align: right;
-  height: 90px;
-}
+
 .bannertext{
   color: white;
   text-align: center;
+  padding: 20px;
 }
+
 .bannertext .learnmore{
   background: transparent;
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px;
 }
-#nav1{
-  padding-top: 20px;
-}
+
 #hero-banner{
   height: 500px;
   background-image: url(assets/images/bg2.jpg);
   background-repeat:no-repeat;
   background-size: cover;
+  padding: 50px;
 }
 #firstsection{
   background-color: rgb(0, 100, 250);
@@ -47,23 +40,22 @@
   color: white
 }
 
-.col-inline{
-  width: 32.33%;
-  display: inline-block;
-
-
+.image-wrapper{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: auto;
+    position: relative;
+    margin-right: 10%;
+    margin-left: 185px;
+    position: relative;
 }
 .image-wrapper img{
-  height: 80px;
-  width: auto;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 10px;
+  height: 60px;
+
 
 }
+
 #secondsection{
   background-color:grey;
 }
@@ -79,26 +71,16 @@
   text-align: center;
   color: white
 }
-.container{
-  width: 1200px;
-  margin:auto;
-}
-.row-group{
-  margin-right: -10px;
-  margin-left: -10px;
-}
-.col {
-  width: 33.33%;
-  padding: 10px;
-  box-sizing: border-box;
-  float: left;
 
+.col-image{
+  margin-bottom: 30px;
 }
-.col img{
-  transition: all 1s linear;
+
+.col-image img{
+  transition: all 0.5s linear;
   width: 100%;
 }
-.col img:hover{
+.col-image img:hover{
   transform: scale(1.1);
   opacity: 0.6;
 
