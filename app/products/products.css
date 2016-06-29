@@ -28,11 +28,33 @@ padding-bottom: 20px;
   transform: scale(0.9);
   opacity: 0.6;
 }
+
 .effect1{
   box-shadow:  0 8px 6px -6px black;
   border-radius: 15px;
 }
+.effect1 p{
+  text-align: left;
+  margin-left: 10px;
+}
 
+.pagination{
+  float: left;
+}
+
+.col-image-right{
+  margin-bottom: 30px;
+
+}
+.col-image-right img{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.text-right-search{
+  padding-top: 20px;
+}
 .footer{
   text-align: center;
   width: 100%;
