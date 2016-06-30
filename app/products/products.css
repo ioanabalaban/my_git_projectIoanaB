@@ -28,6 +28,20 @@ padding-bottom: 20px;
   transform: scale(0.9);
   opacity: 0.6;
 }
+.sale{
+  float:right;
+  color:white;
+  margin-right: 40px;
+}
+.sale p{
+  position:absolute;
+  border-radius: 50%;
+  background-color: red;
+  border: 2px solid red;
+  padding: 10px;
+  top:-10px;
+
+}
 
 .effect1{
   box-shadow:  0 8px 6px -6px black;

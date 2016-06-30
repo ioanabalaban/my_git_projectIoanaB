@@ -1,0 +1,83 @@
+.col-image{
+  width: 100%;
+}
+.row{
+  margin-top: 100px;
+}
+.btnminus{
+  background-color: rgb(205, 30, 0);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.inputbutton{
+  width: 30px;
+height: 35px;
+margin-left: -5px;
+margin-right: -5px;
+text-align: center;
+border-width: 1px 0 1px 0;
+border-top-color: transparent;
+}
+.btnplus{
+  background-color: rgb(205, 30, 0);
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.btnadd{
+  background-color: blue;
+  color: white;
+}
+.textdescription{
+  background-color: rgb(205, 30, 0);
+  padding: 10px;
+  color:black;
+}
+.tabs{
+margin-top:20px;
+
+}
+.table{
+  margin-bottom: 0;
+}
+#specification{
+  border:10px solid rgb(205, 30, 0);
+
+}
+
+.tab-pane{
+    background-color: rgb(205, 30, 0);
+    margin: 15px;
+
+}
+.effect{
+  box-shadow:  0 8px 6px -6px black;
+  border-radius: 15px;
+  padding: 10px;
+}
+.tabs a{
+  color:red;
+
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  box-shadow: 0 -2px red;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.specification{
+  background-color: rgb(205, 30, 0);
+  color: black;
+}
+.footer{
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.arrow{
+  text-align: center;
+  color: black;
+  transition:2s linear;
+
+}
+.arrow:hover{
+  transform: rotate(360deg);
+}
