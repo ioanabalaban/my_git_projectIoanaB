@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.container h1{
+  color: black;
+  margin-top:90px;
+}
+.btncart{
+    background-color: rgb(205, 30, 0);
+    margin-top: 10px;
+    color: white;
+    float: right;
+}
+.col-image{
+  width: 40px;
+}
+.form-control{
+  margin-bottom: 10px;
+}
+.total p{
+  color:red;
+  font-size: 25px;
+}
+.total{
+  vertical-align: top;
+}

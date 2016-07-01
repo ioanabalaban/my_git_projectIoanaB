@@ -1,0 +1,61 @@
+.main{
+  padding-top:90px;
+  padding-bottom: 90px;
+}
+
+.section-lg-reg{
+    background-color: rgb(0, 100, 250);
+    color: white;
+    height: auto;
+}
+.div-lg-reg{
+  margin: auto;
+  width: 30%;
+}
+
+
+.form-group p{
+text-align: right;
+}
+.btnminus{
+  background-color: rgb(205, 30, 0);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.inputbutton{
+width: 30px;
+height: 35px;
+margin-left: -5px;
+margin-right: -5px;
+text-align: center;
+border-width: 1px 0 1px 0;
+border-top-color: transparent;
+}
+.btnplus{
+  background-color: rgb(205, 30, 0);
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.btnadd{
+  background-color: blue;
+  color: white;
+}
+
+.footer{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  position: fixed;
+  bottom: 0;
+  clear: both;
+}
+.arrow{
+  text-align: center;
+  color: black;
+  transition:2s linear;
+
+}
+.arrow:hover{
+  transform: rotate(360deg);
+}

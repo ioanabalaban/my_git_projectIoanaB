@@ -1,84 +1,67 @@
-#firstsection{
-  background-color: rgb(0, 153, 153);
-  height: 200px;
-  text-align: center;
-  color: black;
-  padding: 90px;
+#firstsection {
+    background-color: rgb(0, 153, 153);
+    height: 200px;
+    text-align: center;
+    color: black;
+    padding: 90px;
 }
-
-#secondsection{
+#secondsection {
     text-align: center;
     color: black;
 }
-.secondtext{
-padding-bottom: 20px;
+.secondsection p{
+    padding-bottom: 20px;
+}
+.col-image {
+    margin-bottom: 30px;
+}
+.col-image img {
+    transition: all 1s linear;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.col-image img:hover {
+    transform: scale(0.9);
+    opacity: 0.6;
 }
 
-.col-image{
-  margin-bottom: 30px;
+.sale {
+    float: right;
+    color: white;
+    margin-right: 40px;
 }
 
-.col-image img{
-  transition: all 1s linear;
-  width: 100%;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+.sale p {
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid red;
+    padding: 10px;
+    top: -10px;
+    z-index: 10;
 }
-.col-image img:hover{
-  transform: scale(0.9);
-  opacity: 0.6;
+.effect {
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 15px;
 }
-.sale{
-  float:right;
-  color:white;
-  margin-right: 40px;
+.effect p{
+    text-align: left;
+    margin-left: 10px;
 }
-.sale p{
-  position:absolute;
-  border-radius: 50%;
-  background-color: red;
-  border: 2px solid red;
-  padding: 10px;
-  top:-10px;
-
+.pagination {
+    float: left;
 }
 
-.effect1{
-  box-shadow:  0 8px 6px -6px black;
-  border-radius: 15px;
+.col-image-right {
+    margin-bottom: 30px;
 }
-.effect1 p{
-  text-align: left;
-  margin-left: 10px;
-}
-
-.pagination{
-  float: left;
+.col-image-right img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.col-image-right{
-  margin-bottom: 30px;
-
-}
-.col-image-right img{
-  width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-.text-right-search{
-  padding-top: 20px;
-}
-.footer{
-  text-align: center;
-  width: 100%;
-}
-.arrow{
-  text-align: center;
-  color: black;
-  transition:2s linear;
-
-}
-.arrow:hover{
-  transform: rotate(360deg);
+.text-right-search {
+    padding-top: 20px;
 }

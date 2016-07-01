@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" type="text/css" href="../common.css">
     <script src="../assets/jquery/jquery-2.1.4.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.js"></script>
 </head>
@@ -34,12 +35,11 @@
             </nav>
         </header>
     </section>
-    <section id="second">
 
-
-
-        <form class="form-group">
-            <h3 id="login-text"><strong>Register</strong></h3>
+    <section class="main section-lg-reg">
+      <div class="div-lg-reg">
+        <h3><strong>Register</strong></h3>
+        <form class="clearfix">
             <div class="form-group">
                 <label for="username"><strong>Username:</strong></label>
                 <input type="text" class="form-control" required id="username" name="username" placeholder="Username">
@@ -56,17 +56,16 @@
                 <label for="email"><strong>Email address</strong></label>
                 <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
-            <div class="form-group">
+            <div class="pull-right">
                 <button class="btn btn-default" type="submit" name="button">Register</button>
             </div>
         </form>
+      </div>
     </section>
 
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container">
-            <p><strong>Copywrite</strong><i class="fa fa-copyright" aria-hidden="true"></i><strong>Summer Internship</strong><a href="#top"><i class="fa fa-arrow-circle-o-up fa-3x arrow" aria-hidden="true" ></i></a></p>
-        </div>
-    </nav>
+    <footer class="footer">
+        <p><strong>Copywrite</strong><i class="fa fa-copyright" aria-hidden="true"></i><strong>Summer Internship</strong><a href="#top"><i class="fa fa-arrow-circle-o-up fa-3x arrow" aria-hidden="true" ></i></a></p>
+    </footer>
 
 </body>
 
