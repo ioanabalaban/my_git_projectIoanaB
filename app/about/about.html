@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script>
+  function sum(a,b, cb){
+    var result = a + b;
+    setTimeout(function(){
+      cb(result)
+    }, 500)
+  }
+  sum(1,2, function(result){
+    console.log(result);
+  })
+  console.log('test')
+  </script>
+</head>
+<body>
+</body>
+</html>

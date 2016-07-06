@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script>
+// <!--
+//   function onloadBody(){
+//     document.querySelector('#content ul')
+//     .addEventListener('mouseover', function(){
+//       event.stopPropagation()
+//                       alert('test2');
+//                       })
+//       document.querySelector('#content')
+//       .addEventListener('click', function(){
+//                           alert('test');
+//                           })
+//     document.addEventListener('click', function(event){
+//       alert('test1');
+//     })
+//   } -->
+</script>
+</head>
+
+  <body>
+  <div id="content">
+    <p>Hello World</p>
+    <span>I am a span</span>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <div class="container">
+      <div id="div1" class="div"><span>1</span></div>
+      <div id="div2" class="div"><span>2</span></div>
+      <div id="div3" class="div"><span>3</span></div>
+    </div>
+    <div class="container">
+      <div id="div4" class="div"><span>4</span></div>
+      <div id="div5" class="div"><span>5</span</div>
+      <div id="div6" class="div"><span>6</span></div>
+    </div>
+  </div>
+  <script>
+  (function() {
+    var elements=document.querySelectorAll('div.container>:first-child');
+
+
+    for(var i=0;i<elements.length;i++)
+    {
+    // console.log(elements[i].innerHTML)
+    elements[i].style.color='red'
+    console.log(elements[i].childNodes[0].innerHTML)
+  }
+
+  })();
+  </script>
+  </body>
+
+<body>
+</body>
+</html>
