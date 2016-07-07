@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded',function(){
     //the dom has been loaded
     //get a reference to our form
-    var registerForm = document.querySelector('#register');
+    var registerForm = document.querySelector('#contact');
     //a collection of input ids
-    var inputs = ['#username','#email','#password','#confirm-password'];
+    var inputs = ['#email','#subject','#message'];
+
     //attach to each input an event listener so we can check for events
     for(var i=0;i<inputs.length;i++) {
       document.querySelector(inputs[i]).addEventListener("keyup",function() {
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded',function(){
         for(var i=0;i<inputs.length;i++) {
           if(isEmptyInput(inputs[i])) {
              hasError = true;
-             showError(inputs[i])
+             showError1(inputs[i])
           } else {
             hideError(inputs[i])
           }

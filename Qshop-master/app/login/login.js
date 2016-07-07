@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded',function(){
     //the dom has been loaded
     //get a reference to our form
-    var registerForm = document.querySelector('#register');
+    var registerForm = document.querySelector('#login');
     //a collection of input ids
-    var inputs = ['#username','#email','#password','#confirm-password'];
+    var inputs = ['#username','#password'];
     //attach to each input an event listener so we can check for events
     for(var i=0;i<inputs.length;i++) {
       document.querySelector(inputs[i]).addEventListener("keyup",function() {
