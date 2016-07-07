@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded',function(){
         for(var i=0;i<inputs.length;i++) {
           if(isEmptyInput(inputs[i])) {
              hasError = true;
-             showError1(inputs[i])
+             showError(inputs[i])
           } else {
             hideError(inputs[i])
           }
