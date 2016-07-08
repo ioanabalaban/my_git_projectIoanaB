@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="product.css">
     <script src="../assets/js/jquery-2.1.4.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.js"></script>
+    <script src="./product.js"></script>
+    <script src="../js/utils.js"></script>
 </head>
 <body id="top">
 <!-- Header -->
@@ -84,33 +86,23 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="product-summary">
-                    <h2>Awesome Product</h2>
+                <div id="product-summary">
 
-                    <div class="review-number">
-                        <span class="review-count">1</span> review
-                    </div>
-                    <p class="price">$22 </p>
-
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus nibh sed elimttis
-                        adipiscing. Fusce in hendrerit purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed tempus nibh sed elimttis adipiscing. Fusce in hendrerit purus.
-                    </p>
-
-                    <form method="post" class="add-to-cart">
-                        <div class="row">
-                            <div class="quantity clearfix col-xs-6 col-sm-6 col-md-4">
-                                <input type="button" class="minus" value="-" >
-                                <input type="number" class="input-text qty text" title="Qty" value="1" name="quantity">
-                                <input type="button" class="plus" value="+" >
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3">
-                                <button type="button" class="btn btn-primary">Add to cart</button>
-                            </div>
-                        </div>
-                    </form>
                 </div>
+                <div class="col-sm-12"
+                <form method="post" class="add-to-cart">
+                    <div class="row">
+                        <div class="quantity clearfix col-xs-6 col-sm-6 col-md-4">
+                            <input type="button" class="minus" value="-" >
+                            <input type="number" class="input-text qty text" title="Qty" value="1" name="quantity">
+                            <input type="button" class="plus" value="+" >
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-3">
+                            <button type="button" class="btn btn-primary">Add to cart</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
             </div>
         </div>
         <div class="tabs">
