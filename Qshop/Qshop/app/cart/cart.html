@@ -1,0 +1,146 @@
+<html !DOCTYPE>
+<html>
+<head>
+    <title>Hi Summer Internship</title>
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../common.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script src="../assets/js/jquery-2.1.4.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="./cart.js"></script>
+</head>
+<body id="top">
+<!-- Header -->
+<header id='header'>
+    <nav class="navbar navbar-default navbar-fixed-top tall">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" data-target="#myNavbar" data-toggle="collapse"
+                        class="btn btn-default btn-lg navbar-toggle">
+                    <span class="glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand">QShop</a>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="myNavbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../products/products.html">Shop</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../login/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="main cart-main">
+    <div class="container">
+        <h2>Shopping Cart</h2>
+        <div class="row">
+            <div class="col-sm-12">
+                <form method="post">
+                    <table class="table table-responsive cart-table">
+                        <thead>
+                        <tr>
+                            <th> &nbsp;</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+
+                        </tbody>
+                        <tfoot>
+                          <tr class="cart-actions">
+                              <td colspan="6">
+                                  <div class="update-buttons">
+                                      <button class="btn btn-default btn-orange">Update Cart</button>
+                                  </div>
+                              </td>
+                          </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="shipping-costs">
+                    <form>
+                        <h3>Calculate Shipping</h3>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-md-12 form-rows">
+                                    <label>Country</label>
+                                    <select class="form-control" placeholder="Select a country">
+                                        <option value="" disabled selected>Select your option</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Germany">Germany</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-md-6 form-rows">
+                                    <label>City</label>
+                                    <input class="form-control" type="text" placeholder="Bucharest"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Zip Code</label>
+                                    <input class="form-control" type="text" placeholder=""/>
+                                </div>
+                                <div class="col-md-6"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-orange pull-right">Update Totals</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Cart Total</h3>
+                <table class="table table-responsive cart-totals">
+                    <tbody>
+                        <tr class="cart-subtotal">
+                            <th>Cart Subtotal</th>
+                            <td>$650</td>
+                        </tr>
+                        <tr class="cart-shipping">
+                            <th>Shipping</th>
+                            <td>Free</td>
+                        </tr>
+                        <tr class="cart-total">
+                            <th>Order Total</th>
+                            <td class="price">$650</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="copyright-container">
+            <h1>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Summer Fun</h1>
+        </div>
+        <div class="back-to-top">
+            <a href="#top"><i class="fa fa-arrow-circle-o-up fa-3x"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
