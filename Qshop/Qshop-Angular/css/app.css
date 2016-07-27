@@ -3,7 +3,7 @@
     margin-top: 70px;
     padding-top: 100px;
     height: 700px;
-    background-image: url('assets/images/bg2.jpg');
+    background-image: url('../assets/images/bg2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 

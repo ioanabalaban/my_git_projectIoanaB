@@ -1,10 +1,11 @@
+<div ng-controller="ProductsController">
 <section class="main banner">
     <div class="container text-center">
         <h1> Shop</h1>
     </div>
 
 </section>
-<section class="product-list">
+<section class="product-list" >
     <div class="container">
         <div class="row">
             <div class="products-description text-center">
@@ -26,7 +27,7 @@
 
                         <span class="on-sale-bubble" ng-show="product.onSale==true">Sale!</span>
                               <a href="#" class="add-to-card">Add to cart</a>
-                              <a href ="/products/{{product.id}}">
+                              <a href ="/#/products/{{product.id}}">
                                   <img ng-src="{{product.picture}}">
                               </a>
 
@@ -122,3 +123,4 @@
         </div>
     </div>
 </section>
+</div>
