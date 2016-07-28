@@ -1,13 +1,13 @@
-angular.module("qshop").controller("ProductController", function($scope,$stateParams,ProductsRepository, Cart) {
-    $scope.productQty = 1;
+angular.module("qshop").controller("ProductController", function($scope, $stateParams, ProductsRepository, Cart) {
+    $scope.quantity = 1;
     $scope.tabPanel = "description";
     $scope.creste = function() {
-        $scope.productQty++;
+        $scope.quantity++;
     }
 
     $scope.scade = function() {
-        if ($scope.productQty > 1) {
-            $scope.productQty--;
+        if ($scope.quantity > 1) {
+            $scope.quantity--;
         }
     }
 
@@ -32,9 +32,8 @@ angular.module("qshop").controller("ProductController", function($scope,$statePa
             console.error(err);
         });
     };
-    $scope.addToCart = function(){
-      $scope.product.qty = $scope.productQty;
-      Cart.add($scope.product);
+    $scope.addToCart = function() {
+        Cart.add($scope.product, $scope.quantity);
     };
 
 });
