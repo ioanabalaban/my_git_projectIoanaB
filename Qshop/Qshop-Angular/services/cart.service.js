@@ -21,7 +21,7 @@ angular.module("qshop").factory("Cart", function($rootScope) {
             cart.products.push(product);
 
         }
-          $rootScope.$broadcast('cart-updated');
+        $rootScope.$broadcast('cart-updated');
     };
 
     cart.getTotalProducts = function() {
@@ -56,6 +56,29 @@ angular.module("qshop").factory("Cart", function($rootScope) {
         return this.getSubTotal() + this.getShipping();
 
     };
+    cart.remove = function(product) {
+        var index = null;
+        for (var i = 0; i < this.products.length; i++) {
+            if (this.products[i].id == product.id) {
+                index = i;
+                break;
+            }
+        }
+        if (index != null) {
+            this.products.splice(index, 1)
+        }
+
+    };
+
+    cart.sendOrder = function(order){
+
+
+      console.log('Comanda', order);
+      cart.products = [];
+      $rootScope.$broadcast('cart-updated');
+
+    };
+
     return cart;
 
 });

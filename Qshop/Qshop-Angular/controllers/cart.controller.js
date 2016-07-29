@@ -1,4 +1,4 @@
-angular.module("qshop").controller("CartController", function($scope,$rootScope, Cart) {
+angular.module("qshop").controller("CartController", function($scope, $rootScope, $state, Cart) {
 
     $scope.listProducts = Cart.getProducts();
 
@@ -6,6 +6,7 @@ angular.module("qshop").controller("CartController", function($scope,$rootScope,
         $scope.subTotal = Cart.getSubTotal();
         $scope.shipping = Cart.getShipping();
         $scope.total = Cart.getTotal();
+        $rootScope.$broadcast('cart-updated');
 
     }
 
@@ -17,7 +18,7 @@ angular.module("qshop").controller("CartController", function($scope,$rootScope,
                 if ($scope.listProducts[i].quantity > 1) {
                     $scope.listProducts[i].quantity--;
                     updateView();
-                    $rootScope.$broadcast('cart-updated');
+
                 }
                 break;
             }
@@ -29,9 +30,34 @@ angular.module("qshop").controller("CartController", function($scope,$rootScope,
             if ($scope.listProducts[i].id == id) {
                 $scope.listProducts[i].quantity++;
                 updateView();
-                $rootScope.$broadcast('cart-updated');
+
                 break;
             }
         }
     }
+
+    $scope.removeProduct = function(product){
+      Cart.remove(product);
+      $scope.listProducts = Cart.getProducts();
+      updateView();
+    }
+    $scope.sendOrder = function(){
+      var order = {
+        products: [],
+        country: "",
+        city: "",
+        zipCode: ""
+
+      };
+      order.products = $scope.listProducts;
+      order.country = $scope.country;
+      order.city = $scope.city;
+      order.zipCode = $scope.zipCode;
+
+      Cart.sendOrder(order);
+      //redirect pe prima pagina dupa ce trimitem order-ul
+      $state.go('default');
+
+    };
+
 });
